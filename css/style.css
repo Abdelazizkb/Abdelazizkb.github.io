@@ -834,15 +834,21 @@ body:after {
     .slide-one-item .owl-dots .owl-dot.active > span {
       background: #fff; }
 
+.blog_entry{
+  height: 450px;
+  border: 1px solid #eee;
+  border-top: none;
+}      
+.b-h{
+  height: 600px;
+}
 .blog_entry img {
   border: 1px solid #eee;
   border-bottom: none;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px; }
 
-.blog_entry > div {
-  border: 1px solid #eee;
-  border-top: none; }
+  
 
 .blog_entry h3 {
   font-size: 1.3rem; }
@@ -927,3 +933,15 @@ figure figcaption {
 }
 
   }
+  @media(max-width:700px){
+    .site-logo{
+      display: none;
+    }
+    .uptologo{
+      justify-content: flex-end !important;
+    }
+      }
+
+.p-h{
+  
+}  
