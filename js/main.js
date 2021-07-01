@@ -239,7 +239,6 @@ jQuery(document).ready(function($) {
   siteScroll();
 
 
-
   $('.fancybox').on('click', function() {
 	  var visibleLinks = $('.fancybox');
 
@@ -247,5 +246,32 @@ jQuery(document).ready(function($) {
 
 	  return false;
 	});
+  $('.animate').load({   transform : 'rotate('+ 5 +'deg)'  })	
 
 });
+
+const textDom=document.querySelector(".animate");
+const text=textDom.textContent;
+const splitText=text.split("");
+textDom.textContent='';
+splitText.map(e=>{
+	textDom.innerHTML+='<span class="animate-char">'+e+'</span>'
+})
+let char=0
+var timer=setInterval(onTick,50)
+
+function onTick(){
+const span=textDom.childNodes [char];
+span.classList.add("fad");
+char++;
+if(char===splitText.length){
+	complete();
+	return;
+}
+}
+
+function complete(){
+	clearInterval(timer);
+	timer=null;
+}
+

@@ -925,6 +925,16 @@ figure figcaption {
   font-style: italic;
   font-size: .8rem; }
 
+.animate-char{
+  opacity: 0;
+}
+
+.fad{
+  transition: all 0.9s ease; 
+  opacity: 1 !important;
+  transform: translateY(0px);
+
+}
 
 
 @media(max-width:1000px){
